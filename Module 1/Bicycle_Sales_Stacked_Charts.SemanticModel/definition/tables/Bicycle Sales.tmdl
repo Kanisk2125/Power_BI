@@ -1,0 +1,221 @@
+table 'Bicycle Sales'
+	lineageTag: 375d54fd-5402-40bd-b7e7-5ca4e58364dc
+
+	column State
+		dataType: string
+		lineageTag: f8f711b6-505a-46f3-a84c-6c2ab44caf50
+		summarizeBy: none
+		sourceColumn: State
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product
+		dataType: string
+		lineageTag: 5ab9f4d9-8e98-4c76-bfef-01e17d4fa066
+		summarizeBy: none
+		sourceColumn: Product
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Discount Band'
+		dataType: string
+		lineageTag: 4f33c4cf-d419-42dd-810f-04a3cdcfff7c
+		summarizeBy: none
+		sourceColumn: Discount Band
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Units Sold'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3c7a8202-ebf7-46ac-bf55-6d4b3fd5a8ba
+		summarizeBy: sum
+		sourceColumn: Units Sold
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manufacturing Price'
+		dataType: int64
+		formatString: 0
+		lineageTag: b73038b2-17b1-450e-87c9-8cd7d05696ec
+		summarizeBy: sum
+		sourceColumn: Manufacturing Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sale Price'
+		dataType: int64
+		formatString: 0
+		lineageTag: b072fe76-5718-41f8-b5c1-4214d8a496f5
+		summarizeBy: sum
+		sourceColumn: Sale Price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Gross Sales'
+		dataType: int64
+		formatString: 0
+		lineageTag: 21f8d383-5dee-44ce-a3b5-b60eda586831
+		summarizeBy: sum
+		sourceColumn: Gross Sales
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discounts
+		dataType: double
+		lineageTag: 27346e7c-fb24-4060-ab2c-2beec11e5956
+		summarizeBy: sum
+		sourceColumn: Discounts
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Sales
+		dataType: double
+		lineageTag: 274f534e-6c1d-4cd7-8180-449bf55075cb
+		summarizeBy: sum
+		sourceColumn: Sales
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column COGS
+		dataType: int64
+		formatString: 0
+		lineageTag: 7db44452-b6d5-40d9-abfa-84d24c6f1813
+		summarizeBy: sum
+		sourceColumn: COGS
+
+		annotation SummarizationSetBy = Automatic
+
+	column Profit
+		dataType: double
+		lineageTag: 52b45e2c-ee5e-4d5d-82e7-3be140838624
+		summarizeBy: sum
+		sourceColumn: Profit
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Month Number'
+		dataType: int64
+		formatString: 0
+		lineageTag: 0325feda-c3f5-4c4e-be37-c63c55422e8c
+		summarizeBy: sum
+		sourceColumn: Month Number
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Name'
+		dataType: string
+		lineageTag: 96e071bb-548d-4db4-aee8-b3b17546baf2
+		summarizeBy: none
+		sourceColumn: Month Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: fb4eff89-e804-4928-a6c7-db850a30f761
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: 4fdaeb67-963d-4f3f-8565-d305174aca1b
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: 7cb47ee8-2693-4b98-ba2e-98b67e2e6fb2
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column17
+		dataType: string
+		lineageTag: 924148f2-ffdb-4340-b62a-ebe67e2560c3
+		summarizeBy: none
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column18
+		dataType: string
+		lineageTag: 0be80ddc-f880-4b01-8c58-3579fac86f2a
+		summarizeBy: none
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column19
+		dataType: string
+		lineageTag: 4ec01ee8-4b6c-4acf-8226-93ebd0074fb9
+		summarizeBy: none
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column20
+		dataType: string
+		lineageTag: 911ccebe-7e1f-4b12-ae0f-9c94ba7bd535
+		summarizeBy: none
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column21
+		dataType: string
+		lineageTag: c75676eb-8757-43fd-9caf-6d7548160162
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column22
+		dataType: string
+		lineageTag: 931d389c-e7b9-43d0-a5b1-0e174ece1a04
+		summarizeBy: none
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: 8022e075-8b38-4d59-981f-8bda36704927
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column24
+		dataType: string
+		lineageTag: fb2c5368-feb1-4a83-93e2-007f9d2d84f2
+		summarizeBy: none
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Bicycle Sales' = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_ColumnChartsPOWERBI.xlsx"), null, true),
+				    #"Bicycle Sales_Sheet" = Source{[Item="Bicycle Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(#"Bicycle Sales_Sheet", [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"State", type text}, {"Product", type text}, {"Discount Band", type text}, {"Units Sold", Int64.Type}, {"Manufacturing Price", Int64.Type}, {"Sale Price", Int64.Type}, {"Gross Sales", Int64.Type}, {"Discounts", type number}, {"Sales", type number}, {"COGS", Int64.Type}, {"Profit", type number}, {"Month Number", Int64.Type}, {"Month Name", type text}, {"Year", Int64.Type}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+
