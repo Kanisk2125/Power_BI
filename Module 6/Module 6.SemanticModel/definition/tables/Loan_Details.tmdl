@@ -1,0 +1,280 @@
+table Loan_Details
+	lineageTag: c5f03075-8639-420b-8970-c51627cd6d67
+
+	measure Min_Interest = MIN('Loan_Details'[Interest_Rate])
+		lineageTag: eca83448-ce9d-44bf-aa7d-8dc2576b0ad5
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Maxq_Interest = MAX('Loan_Details'[Interest_Rate])
+		lineageTag: dc24b476-5bbb-4ea4-bfee-7e3e4812530f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure Defaulted_Loans = ```
+			
+			CALCULATE(COUNT('Loan_Details'[Loan_ID]), 'Loan_Details'[Status] = "Defaulted")
+			
+			```
+		formatString: 0
+		lineageTag: 58c87c83-2347-4be7-8de5-693085d5e79f
+
+	measure Default_Loan_Amount = ```
+			
+			CALCULATE(SUM('Loan_Details'[Loan_Amount]), 'Loan_Details'[Status] = "Defaulted")
+			
+			```
+		formatString: \$#,0.00;-\$#,0.00;\$#,0.00
+		lineageTag: f9c5051a-38cf-4c22-ab11-0403cdbe5a35
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-HK"}
+
+	column Loan_ID
+		dataType: string
+		lineageTag: df892b2b-0408-4b6d-83e5-ceed16c2b566
+		summarizeBy: none
+		sourceColumn: Loan_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_ID
+		dataType: string
+		lineageTag: 4f5fc2bb-d85d-407d-8cf0-7dda127961ae
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Loan_Amount
+		dataType: int64
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 20a25779-4d62-43a6-aa91-dfda780c2b5f
+		summarizeBy: sum
+		sourceColumn: Loan_Amount
+
+		annotation SummarizationSetBy = Automatic
+
+	column Interest_Rate
+		dataType: double
+		lineageTag: cb6388c5-aaba-4d3d-a790-2b793eb78a6f
+		summarizeBy: sum
+		sourceColumn: Interest_Rate
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Term
+		dataType: int64
+		formatString: 0
+		lineageTag: 0dd72c41-5f81-4d53-a336-b93eddea0a70
+		summarizeBy: sum
+		sourceColumn: Term
+
+		annotation SummarizationSetBy = Automatic
+
+	column Loan_Type
+		dataType: string
+		lineageTag: 18ae70b6-98ea-40d2-b676-b81da2c9c811
+		summarizeBy: none
+		sourceColumn: Loan_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Issue_Date
+		dataType: int64
+		formatString: 0
+		lineageTag: 236b5c8a-922b-4e45-98b8-31968b43a53b
+		summarizeBy: sum
+		sourceColumn: Issue_Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column Status
+		dataType: string
+		lineageTag: 6bcea31e-ef18-416c-ba0d-95776516b6fa
+		summarizeBy: none
+		sourceColumn: Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Monthly_Installment
+		dataType: double
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 6b16a84e-80b3-48f2-ab71-151023a941e6
+		summarizeBy: sum
+		sourceColumn: Monthly_Installment
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 2855171f-9807-42ff-bbe8-63a7cb0e6ca3
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: 660b1532-5f1f-429f-85c8-826855e34738
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: d55ce44a-d0d7-4b8d-b92e-c593a2523483
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: 95e7179b-ae6a-4c54-a950-db0f2187c51a
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 8ee6ccf7-dc10-464d-b3b5-818a41469db6
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: 3326942b-3556-47eb-b690-afac280ed5fc
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: 48685989-11a4-444a-8744-e0e40acdfa53
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column17
+		dataType: string
+		lineageTag: 74803e4c-44b9-4acb-9c45-475b4d3aff28
+		summarizeBy: none
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column18
+		dataType: string
+		lineageTag: 60466639-3340-41f3-907a-25bc6db9b806
+		summarizeBy: none
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column19
+		dataType: string
+		lineageTag: bf95758f-f076-4638-b84d-ba38d0d3d4f7
+		summarizeBy: none
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column20
+		dataType: string
+		lineageTag: ff4888b9-2c14-498a-a989-66a2c8c8fb44
+		summarizeBy: none
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column21
+		dataType: string
+		lineageTag: e0193d0a-d257-44c4-a880-5af081fc02c3
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column22
+		dataType: string
+		lineageTag: abf43e80-f1b1-4da7-a271-f8114393dbe8
+		summarizeBy: none
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: b1182c5c-c709-463f-8756-68eea672e695
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column24
+		dataType: string
+		lineageTag: 4271b677-e43c-404f-a533-24ef0f22fe78
+		summarizeBy: none
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column25
+		dataType: string
+		lineageTag: 51f4311a-97c5-4759-8ead-34a3603013f2
+		summarizeBy: none
+		sourceColumn: Column25
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column26
+		dataType: string
+		lineageTag: 43a4404d-13df-4551-89d3-d11f62b39b27
+		summarizeBy: none
+		sourceColumn: Column26
+
+		annotation SummarizationSetBy = Automatic
+
+	column Risk_Category = ```
+			
+			VAR score = LOOKUPVALUE(
+			    'Customer_Details'[Credit_Score],
+			    'Customer_Details'[Customer_ID],
+			    'Loan_Details'[Customer_ID]
+			)
+			RETURN
+			    IF(ISBLANK(score), "Unknown",
+			        IF(score < 580, "High Risk",
+			            IF(score < 670, "Moderate Risk",
+			                IF(score < 740, "Low Risk", "Very Low Risk")
+			            )
+			        )
+			    )
+			
+			```
+		lineageTag: ed5135fc-d31b-4608-bf76-8b97bef55c23
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Loan_Details = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_DashboardPOWERBI.xlsx"), null, true),
+				    Loan_Details_Sheet = Source{[Item="Loan_Details",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Loan_Details_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Loan_ID", type text}, {"Customer_ID", type text}, {"Loan_Amount", Int64.Type}, {"Interest_Rate", type number}, {"Term", Int64.Type}, {"Loan_Type", type text}, {"Issue_Date", Int64.Type}, {"Status", type text}, {"Monthly_Installment", type number}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

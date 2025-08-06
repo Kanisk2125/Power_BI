@@ -1,0 +1,6 @@
+relationship a45e13f4-b36c-a66a-75ec-6ec06e3a8559
+	crossFilteringBehavior: bothDirections
+	toCardinality: many
+	fromColumn: Customer_Details.Customer_ID
+	toColumn: Loan_Details.Customer_ID
+

@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "7233ce624225bd190a64",
+  "position": {
+    "x": 23.333333333333336,
+    "y": 470,
+    "z": 6000,
+    "height": 230,
+    "width": 391.66666666666669,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "Income_Category"
+                }
+              },
+              "queryRef": "Customer_Details.Income_Category",
+              "nativeQueryRef": "Income_Category",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "Education_Level"
+                }
+              },
+              "queryRef": "Customer_Details.Education_Level",
+              "nativeQueryRef": "Education_Level",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loan_Details"
+                    }
+                  },
+                  "Property": "Defaulted_Loans"
+                }
+              },
+              "queryRef": "Loan_Details.Defaulted_Loans",
+              "nativeQueryRef": "Defaulted_Loans"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Loan_Details"
+                    }
+                  },
+                  "Property": "Default_Loan_Amount"
+                }
+              },
+              "queryRef": "Loan_Details.Default_Loan_Amount",
+              "nativeQueryRef": "Default_Loan_Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

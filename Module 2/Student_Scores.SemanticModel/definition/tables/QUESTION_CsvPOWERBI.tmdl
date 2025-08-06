@@ -1,0 +1,102 @@
+table QUESTION_CsvPOWERBI
+	lineageTag: fe1b854c-0c45-488c-807d-b32dca729c38
+
+	column Name
+		dataType: string
+		lineageTag: 18f8d9c6-60b2-4670-8e92-0ed5aec1f4f3
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column RollNumber
+		dataType: int64
+		formatString: 0
+		lineageTag: eb86f16b-1f63-4698-aea4-dc106f8fa1b0
+		summarizeBy: sum
+		sourceColumn: RollNumber
+
+		annotation SummarizationSetBy = Automatic
+
+	column SchoolName
+		dataType: string
+		lineageTag: fef70723-c47f-45f4-9c41-6b9c1cb7b9bc
+		summarizeBy: none
+		sourceColumn: SchoolName
+
+		annotation SummarizationSetBy = Automatic
+
+	column Grade
+		dataType: int64
+		formatString: 0
+		lineageTag: 530d8ad6-3346-433a-bba0-582b6d161929
+		summarizeBy: sum
+		sourceColumn: Grade
+
+		annotation SummarizationSetBy = Automatic
+
+	column City
+		dataType: string
+		lineageTag: 9a36cbd4-0070-490e-8224-cf21157141dd
+		summarizeBy: none
+		sourceColumn: City
+
+		annotation SummarizationSetBy = Automatic
+
+	column Math
+		dataType: int64
+		formatString: 0
+		lineageTag: 80d2eab7-02a7-413e-9387-3a58bb1deb1b
+		summarizeBy: sum
+		sourceColumn: Math
+
+		annotation SummarizationSetBy = Automatic
+
+	column Science
+		dataType: int64
+		formatString: 0
+		lineageTag: a72de60e-2775-4f21-8c3a-33a8f5d3951c
+		summarizeBy: sum
+		sourceColumn: Science
+
+		annotation SummarizationSetBy = Automatic
+
+	column English
+		dataType: int64
+		formatString: 0
+		lineageTag: 15130ddc-37e3-460e-96a1-e43acbd53ad1
+		summarizeBy: sum
+		sourceColumn: English
+
+		annotation SummarizationSetBy = Automatic
+
+	column History
+		dataType: int64
+		formatString: 0
+		lineageTag: dbb7334b-c14d-48bf-bda7-4fda03c8ebe2
+		summarizeBy: sum
+		sourceColumn: History
+
+		annotation SummarizationSetBy = Automatic
+
+	column ComputerScience
+		dataType: int64
+		formatString: 0
+		lineageTag: 3b2b4166-e5a6-4f8a-9b74-ec4e39fa5da8
+		summarizeBy: sum
+		sourceColumn: ComputerScience
+
+		annotation SummarizationSetBy = Automatic
+
+	partition QUESTION_CsvPOWERBI = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_CsvPOWERBI.csv"),[Delimiter=",", Columns=10, Encoding=1252, QuoteStyle=QuoteStyle.None]),
+				    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Name", type text}, {"RollNumber", Int64.Type}, {"SchoolName", type text}, {"Grade", Int64.Type}, {"City", type text}, {"Math", Int64.Type}, {"Science", Int64.Type}, {"English", Int64.Type}, {"History", Int64.Type}, {"ComputerScience", Int64.Type}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

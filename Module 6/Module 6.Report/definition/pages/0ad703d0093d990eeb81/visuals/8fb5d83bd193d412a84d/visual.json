@@ -1,0 +1,82 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "8fb5d83bd193d412a84d",
+  "position": {
+    "x": 541.66666666666674,
+    "y": 93.333333333333343,
+    "z": 1000,
+    "height": 126.66666666666667,
+    "width": 246.66666666666669,
+    "tabOrder": 1000
+  },
+  "visual": {
+    "visualType": "card",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Aggregation": {
+                  "Expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Loan_Details"
+                        }
+                      },
+                      "Property": "Monthly_Installment"
+                    }
+                  },
+                  "Function": 1
+                }
+              },
+              "queryRef": "Sum(Loan_Details.Monthly_Installment)",
+              "nativeQueryRef": "Average of Monthly_Installment",
+              "displayName": "Average Monthly Installment"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Loan_Details"
+                      }
+                    },
+                    "Property": "Monthly_Installment"
+                  }
+                },
+                "Function": 1
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

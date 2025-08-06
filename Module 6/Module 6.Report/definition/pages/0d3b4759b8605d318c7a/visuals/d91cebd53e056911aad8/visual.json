@@ -1,0 +1,117 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "d91cebd53e056911aad8",
+  "position": {
+    "x": 866.66666666666674,
+    "y": 225,
+    "z": 7000,
+    "height": 208.33333333333334,
+    "width": 395,
+    "tabOrder": 7000
+  },
+  "visual": {
+    "visualType": "donutChart",
+    "query": {
+      "queryState": {
+        "Category": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "Employment_Status"
+                }
+              },
+              "queryRef": "Customer_Details.Employment_Status",
+              "nativeQueryRef": "Employment_Status",
+              "active": true
+            }
+          ]
+        },
+        "Y": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "High_Risk_Loan_Amount"
+                }
+              },
+              "queryRef": "Customer_Details.High_Risk_Loan_Amount",
+              "nativeQueryRef": "High_Risk_Loan_Amount"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "High_Risk_Loans"
+                }
+              },
+              "queryRef": "Customer_Details.High_Risk_Loans",
+              "nativeQueryRef": "High_Risk_Loans"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Measure": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Customer_Details"
+                  }
+                },
+                "Property": "High_Risk_Loan_Amount"
+              }
+            },
+            "direction": "Descending"
+          }
+        ],
+        "isDefaultSort": true
+      }
+    },
+    "visualContainerObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'High Risk Loan Amount'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

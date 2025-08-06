@@ -1,0 +1,296 @@
+table Customer_Details
+	lineageTag: b466d4c3-b100-4d5c-8230-fef5b64398dd
+
+	measure Max_Interest = MAX('Loan_Details'[Interest_Rate])
+		lineageTag: 39ef8996-66bd-40d6-82fe-55a8ee0b973f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure High_Risk_Loan_Amount = ```
+			
+			CALCULATE(SUM('Loan_Details'[Loan_Amount]), 'Loan_Details'[Risk_Category] = "High Risk")
+			
+			```
+		formatString: \$#,0.00;-\$#,0.00;\$#,0.00
+		lineageTag: ebc55e87-b73a-4535-8561-40536c9e0a77
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-HK"}
+
+	measure High_Risk_Loans = ```
+			
+			CALCULATE(COUNT('Loan_Details'[Loan_ID]), 'Loan_Details'[Risk_Category] = "High Risk")
+			
+			```
+		formatString: 0
+		lineageTag: b22b536c-0156-467c-bc51-b66431537663
+
+	column Customer_ID
+		dataType: string
+		lineageTag: 8645d89d-45f3-479f-aa24-be606e3697f9
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Name
+		dataType: string
+		lineageTag: 3b0772be-d172-4316-b2c5-4891a7e77fa4
+		summarizeBy: none
+		sourceColumn: Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Age
+		dataType: int64
+		formatString: 0
+		lineageTag: e95c0b46-4c40-469d-aa15-9687a91988ed
+		summarizeBy: sum
+		sourceColumn: Age
+
+		annotation SummarizationSetBy = Automatic
+
+	column Gender
+		dataType: string
+		lineageTag: 6edc1ab5-dac5-4597-a005-80af2a3f059b
+		summarizeBy: none
+		sourceColumn: Gender
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income
+		dataType: int64
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		lineageTag: 9c084b05-424a-4cb7-84c9-c85a94232c55
+		summarizeBy: sum
+		sourceColumn: Income
+
+		annotation SummarizationSetBy = Automatic
+
+	column Employment_Status
+		dataType: string
+		lineageTag: 964069c9-2f05-4847-83c9-303ab0e567b4
+		summarizeBy: none
+		sourceColumn: Employment_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Education_Level
+		dataType: string
+		lineageTag: 36fca749-3dc3-4948-a9d1-18f7543d7311
+		summarizeBy: none
+		sourceColumn: Education_Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column Credit_Score
+		dataType: int64
+		formatString: 0
+		lineageTag: d80531cc-1fcb-458d-a6fe-fcc6148fe8d6
+		summarizeBy: sum
+		sourceColumn: Credit_Score
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column9
+		dataType: string
+		lineageTag: 4786ddf8-a29e-4020-9eea-6539da80b41b
+		summarizeBy: none
+		sourceColumn: Column9
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column10
+		dataType: string
+		lineageTag: 18bada2b-7ce1-4e93-8d0b-8b9827a085f8
+		summarizeBy: none
+		sourceColumn: Column10
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column11
+		dataType: string
+		lineageTag: e7f4d363-8586-4ddf-819f-0d155222ca73
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column12
+		dataType: string
+		lineageTag: 7b847cc3-2c83-4780-a1f2-ed7c0382e9e4
+		summarizeBy: none
+		sourceColumn: Column12
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column13
+		dataType: string
+		lineageTag: d5137817-1c40-44b1-9d1e-2bafd8d21538
+		summarizeBy: none
+		sourceColumn: Column13
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column14
+		dataType: string
+		lineageTag: 011cda3a-a0ce-411f-9c72-da2be900f057
+		summarizeBy: none
+		sourceColumn: Column14
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column15
+		dataType: string
+		lineageTag: a69912c2-efd0-401a-881b-646cb6a8901b
+		summarizeBy: none
+		sourceColumn: Column15
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column16
+		dataType: string
+		lineageTag: fb9cacc6-bc98-4af7-aae5-27d84c3568f6
+		summarizeBy: none
+		sourceColumn: Column16
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column17
+		dataType: string
+		lineageTag: 18e01fab-edfa-4b09-8366-f5357a2efb2d
+		summarizeBy: none
+		sourceColumn: Column17
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column18
+		dataType: string
+		lineageTag: 40b3c8f5-fc97-4969-9b1a-1cb493d41231
+		summarizeBy: none
+		sourceColumn: Column18
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column19
+		dataType: string
+		lineageTag: 09f3d626-12a8-4011-b845-8918728ce308
+		summarizeBy: none
+		sourceColumn: Column19
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column20
+		dataType: string
+		lineageTag: 05c24579-2c4f-4c28-a968-ac585e243a8e
+		summarizeBy: none
+		sourceColumn: Column20
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column21
+		dataType: string
+		lineageTag: f65aa230-c9c2-4b93-b1ff-b2329196db69
+		summarizeBy: none
+		sourceColumn: Column21
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column22
+		dataType: string
+		lineageTag: eb9a703a-b9a6-47ce-a403-6c5977359726
+		summarizeBy: none
+		sourceColumn: Column22
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column23
+		dataType: string
+		lineageTag: d6a14e60-4f3b-4387-8cb2-438afb266cca
+		summarizeBy: none
+		sourceColumn: Column23
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column24
+		dataType: string
+		lineageTag: ed779a90-e636-45d3-a23f-ce31f38b647d
+		summarizeBy: none
+		sourceColumn: Column24
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column25
+		dataType: string
+		lineageTag: 9bd921cf-dbb4-4dc7-aea7-13e15f9ff82d
+		summarizeBy: none
+		sourceColumn: Column25
+
+		annotation SummarizationSetBy = Automatic
+
+	column Column26
+		dataType: string
+		lineageTag: 4075b696-f670-4787-9bbd-cd01fe67a58c
+		summarizeBy: none
+		sourceColumn: Column26
+
+		annotation SummarizationSetBy = Automatic
+
+	column Risk_Category = ```
+			
+			IF('Customer_Details'[Credit_Score] < 580, "High Risk",
+			    IF('Customer_Details'[Credit_Score] < 670, "Moderate Risk",
+			        IF('Customer_Details'[Credit_Score] < 740, "Low Risk", "Very Low Risk")
+			    )
+			)
+			
+			```
+		lineageTag: 6b50ba89-68f9-44c3-8865-0bde819f2b54
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column Income_Category = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'Customer_Details'[Income] < 30000, "Low",
+			    'Customer_Details'[Income] < 70000, "Medium",
+			    "High"
+			)
+			
+			```
+		lineageTag: c67ca7e0-0cec-4ecc-9a1d-7fcc8f209108
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Credit Score Bucket' = ```
+			
+			SWITCH(
+			    TRUE(),
+			    'Customer_Details'[Credit_Score] < 580, "Poor",
+			    'Customer_Details'[Credit_Score] < 670, "Fair",
+			    'Customer_Details'[Credit_Score] < 740, "Good",
+			    'Customer_Details'[Credit_Score] < 800, "Very Good",
+			    "Excellent"
+			)
+			
+			```
+		lineageTag: 951f4847-ac2a-4a1a-8f06-ff154b832098
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Customer_Details = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_DashboardPOWERBI.xlsx"), null, true),
+				    Customer_Details_Sheet = Source{[Item="Customer_Details",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Customer_Details_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Customer_ID", type text}, {"Name", type text}, {"Age", Int64.Type}, {"Gender", type text}, {"Income", Int64.Type}, {"Employment_Status", type text}, {"Education_Level", type text}, {"Credit_Score", Int64.Type}, {"Column9", type any}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

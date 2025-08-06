@@ -1,0 +1,4560 @@
+cultureInfo en-IN
+
+	linguisticMetadata =
+			{
+			  "Version": "4.1.0",
+			  "Language": "en-US",
+			  "Entities": {
+			    "customer_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer detail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Customer_Details": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "client detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "consumer detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "user detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "buyer detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "patron detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "purchaser detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "shopper detail": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.6
+			          }
+			        },
+			        {
+			          "customer aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "customer element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "customer fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.customer_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Customer_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Customer_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.name": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Name"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "name": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "title": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "label": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "tag": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ],
+			      "NameType": "Name"
+			    },
+			    "customer_detail.age": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Age"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "age": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "oldness": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "stage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "phase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "era": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "epoch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.gender": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Gender"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "gender": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "sexuality": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "sex": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.income": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Income"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "income": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "revenue": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "salary": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "pay": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "Income &": {
+			            "State": "Suggested",
+			            "Source": {
+			              "Type": "External",
+			              "Agent": "PowerBI.VisualColumnRename"
+			            },
+			            "Weight": 0.9
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.employment_status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Employment_Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "employment status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Employment_Status": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "employment category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "employment importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "employment prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "employment prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "employment condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "employment class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "employment grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "employment level": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "employment position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "employment rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.education_level": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Education_Level"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "education level": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Education_Level": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "level": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "education quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "education threshold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "threshold": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "education amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "education grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "education point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "education rank": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "education tier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.credit_score": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Credit_Score"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "credit score": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Credit_Score": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "score": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "credit notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit cut": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "credit mark": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "notch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "slash": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "groove": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "nick": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_9": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column9"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 9": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column9": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_11": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column11"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 11": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column11": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_12": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column12"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 12": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column12": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_13": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column13"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 13": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column13": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_14": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column14"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 14": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column14": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_15": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column15"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 15": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column15": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_16": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column16"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 16": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column16": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_17": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column17"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 17": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column17": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_18": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column18"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 18": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column18": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_19": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column19"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 19": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column19": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_20": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column20"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 20": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column20": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_21": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column21"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 21": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column21": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_22": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column22"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 22": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column22": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_23": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column23"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 23": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column23": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_24": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column24"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 24": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column24": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_25": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column25"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 25": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column25": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "customer_detail.column_26": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Customer_Details",
+			          "ConceptualProperty": "Column26"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 26": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column26": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan detail": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Loan_Details": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "detail": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "aspect": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "element": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "fact": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "loan part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan feature": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan point": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan factor": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.loan_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Loan_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Loan_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan credential": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "advance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "credit": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "finance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "mortgage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.customer_ID": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Customer_ID"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "customer ID": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Customer_ID": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "customer": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "customer identification": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "customer identifier": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "client": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "consumer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "user": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "buyer": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "patron": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "purchaser": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "shopper": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.loan_amount": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Loan_Amount"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan amount": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Loan_Amount": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "loan quantity": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan volume": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan expanse": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan extent": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "loan sum": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan total": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "loan aggregate": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.interest_rate": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Interest_Rate"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "interest rate": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Interest_Rate": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "rate": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "interest degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest percentage": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "interest quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "degree": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "frequency": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "ratio": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "quotient": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "interest amount": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.term": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Term"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "term": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "tenure": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "duration": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stretch": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "span": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "stint": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "expression": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "idiom": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.466
+			          }
+			        },
+			        {
+			          "word": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        },
+			        {
+			          "phrase": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.452
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.loan_type": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Loan_Type"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "loan type": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Loan_Type": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "type": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "loan category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "loan variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "genre": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "manner": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "variety": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "loan brand": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        },
+			        {
+			          "loan class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.issue_date": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Issue_Date"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "issue date": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Issue_Date": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "issue moment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.75
+			          }
+			        },
+			        {
+			          "issue period": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.727
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.status": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Status"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "status": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "category": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "importance": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prestige": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "prominence": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.736
+			          }
+			        },
+			        {
+			          "condition": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "class": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "grade": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        },
+			        {
+			          "position": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.714
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.monthly_installment": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Monthly_Installment"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "monthly installment": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Monthly_Installment": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        },
+			        {
+			          "installment": {
+			            "State": "Generated",
+			            "Weight": 0.97
+			          }
+			        },
+			        {
+			          "monthly payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "monthly repayment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.5
+			          }
+			        },
+			        {
+			          "payment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "repayment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.491
+			          }
+			        },
+			        {
+			          "monthly portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "monthly part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "monthly section": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "monthly segment": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.485
+			          }
+			        },
+			        {
+			          "portion": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        },
+			        {
+			          "part": {
+			            "Type": "Noun",
+			            "State": "Suggested",
+			            "Source": {
+			              "Agent": "Thesaurus"
+			            },
+			            "Weight": 0.476
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_10": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column10"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 10": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column10": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_11": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column11"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 11": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column11": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_12": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column12"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 12": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column12": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_13": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column13"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 13": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column13": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_14": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column14"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 14": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column14": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_15": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column15"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 15": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column15": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_16": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column16"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 16": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column16": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_17": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column17"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 17": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column17": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_18": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column18"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 18": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column18": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_19": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column19"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 19": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column19": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_20": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column20"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 20": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column20": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_21": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column21"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 21": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column21": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_22": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column22"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 22": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column22": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_23": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column23"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 23": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column23": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_24": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column24"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 24": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column24": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_25": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column25"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 25": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column25": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    },
+			    "loan_detail.column_26": {
+			      "Definition": {
+			        "Binding": {
+			          "ConceptualEntity": "Loan_Details",
+			          "ConceptualProperty": "Column26"
+			        }
+			      },
+			      "State": "Generated",
+			      "Terms": [
+			        {
+			          "column 26": {
+			            "State": "Generated"
+			          }
+			        },
+			        {
+			          "Column26": {
+			            "Type": "Noun",
+			            "State": "Generated",
+			            "Weight": 0.99
+			          }
+			        }
+			      ]
+			    }
+			  },
+			  "Relationships": {
+			    "loan_detail_has_column_21": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_21": {
+			          "Target": {
+			            "Entity": "loan_detail.column_21"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_21"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_21"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_20": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_20": {
+			          "Target": {
+			            "Entity": "loan_detail.column_20"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_20"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_20"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_19": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_19": {
+			          "Target": {
+			            "Entity": "loan_detail.column_19"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_19"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_19"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_18": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_18": {
+			          "Target": {
+			            "Entity": "loan_detail.column_18"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_18"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_18"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_17": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_17": {
+			          "Target": {
+			            "Entity": "loan_detail.column_17"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_17"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_17"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_16": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_16": {
+			          "Target": {
+			            "Entity": "loan_detail.column_16"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_16"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_16"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_15": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_15": {
+			          "Target": {
+			            "Entity": "loan_detail.column_15"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_15"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_15"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_14": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_14": {
+			          "Target": {
+			            "Entity": "loan_detail.column_14"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_14"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_14"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_13": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_13": {
+			          "Target": {
+			            "Entity": "loan_detail.column_13"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_13"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_13"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_12": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_12": {
+			          "Target": {
+			            "Entity": "loan_detail.column_12"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_12"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_12"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_11": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_11": {
+			          "Target": {
+			            "Entity": "loan_detail.column_11"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_11"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_11"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_10": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_10": {
+			          "Target": {
+			            "Entity": "loan_detail.column_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_10"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_monthly_installment": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.monthly_installment": {
+			          "Target": {
+			            "Entity": "loan_detail.monthly_installment"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.monthly_installment"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_monthly_installments"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.status": {
+			          "Target": {
+			            "Entity": "loan_detail.status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_statuses"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_issue_date": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.issue_date": {
+			          "Target": {
+			            "Entity": "loan_detail.issue_date"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.issue_date"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_issue_dates"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_loan_type": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.loan_type": {
+			          "Target": {
+			            "Entity": "loan_detail.loan_type"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.loan_type"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_loan_types"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_term": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.term": {
+			          "Target": {
+			            "Entity": "loan_detail.term"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.term"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_terms"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_interest_rate": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.interest_rate": {
+			          "Target": {
+			            "Entity": "loan_detail.interest_rate"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.interest_rate"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_interest_rates"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_loan_amount": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.loan_amount": {
+			          "Target": {
+			            "Entity": "loan_detail.loan_amount"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.loan_amount"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_loan_amounts"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_customer_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.customer_ID": {
+			          "Target": {
+			            "Entity": "loan_detail.customer_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.customer_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_customer_ID"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_loan_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.loan_ID": {
+			          "Target": {
+			            "Entity": "loan_detail.loan_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.loan_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_loan_ID"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_26": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_26": {
+			          "Target": {
+			            "Entity": "customer_detail.column_26"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_26"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_26"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_25": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_25": {
+			          "Target": {
+			            "Entity": "customer_detail.column_25"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_25"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_25"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_24": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_24": {
+			          "Target": {
+			            "Entity": "customer_detail.column_24"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_24"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_24"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_23": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_23": {
+			          "Target": {
+			            "Entity": "customer_detail.column_23"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_23"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_23"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_22": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_22": {
+			          "Target": {
+			            "Entity": "customer_detail.column_22"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_22"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_22"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_21": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_21": {
+			          "Target": {
+			            "Entity": "customer_detail.column_21"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_21"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_21"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_20": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_20": {
+			          "Target": {
+			            "Entity": "customer_detail.column_20"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_20"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_20"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_19": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_19": {
+			          "Target": {
+			            "Entity": "customer_detail.column_19"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_19"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_19"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_18": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_18": {
+			          "Target": {
+			            "Entity": "customer_detail.column_18"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_18"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_18"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_17": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_17": {
+			          "Target": {
+			            "Entity": "customer_detail.column_17"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_17"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_17"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_16": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_16": {
+			          "Target": {
+			            "Entity": "customer_detail.column_16"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_16"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_16"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_15": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_15": {
+			          "Target": {
+			            "Entity": "customer_detail.column_15"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_15"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_15"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_14": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_14": {
+			          "Target": {
+			            "Entity": "customer_detail.column_14"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_14"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_14"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_13": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_13": {
+			          "Target": {
+			            "Entity": "customer_detail.column_13"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_13"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_13"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_12": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_12": {
+			          "Target": {
+			            "Entity": "customer_detail.column_12"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_12"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_12"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_11": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_11": {
+			          "Target": {
+			            "Entity": "customer_detail.column_11"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_11"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_11"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_10": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_10": {
+			          "Target": {
+			            "Entity": "customer_detail.column_10"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_10"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_10"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_column_9": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.column_9": {
+			          "Target": {
+			            "Entity": "customer_detail.column_9"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.column_9"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_column_9"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_credit_score": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.credit_score": {
+			          "Target": {
+			            "Entity": "customer_detail.credit_score"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.credit_score"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_credit_scores"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_education_level": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.education_level": {
+			          "Target": {
+			            "Entity": "customer_detail.education_level"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.education_level"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_education_levels"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_employment_status": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.employment_status": {
+			          "Target": {
+			            "Entity": "customer_detail.employment_status"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.employment_status"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_employment_statuses"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_income": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.income": {
+			          "Target": {
+			            "Entity": "customer_detail.income"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.income"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_incomes"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Adjectives": [
+			              {
+			                "expensive": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "cheap": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "customer_detail.income"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "income_indicates_how_expensive_customer_details_are"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_gender": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.gender": {
+			          "Target": {
+			            "Entity": "customer_detail.gender"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.gender"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_genders"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_age": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.age": {
+			          "Target": {
+			            "Entity": "customer_detail.age"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.age"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_ages"
+			        },
+			        {
+			          "Adjective": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Adjectives": [
+			              {
+			                "old": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Antonyms": [
+			              {
+			                "young": {
+			                  "State": "Generated"
+			                }
+			              }
+			            ],
+			            "Measurement": {
+			              "Role": "customer_detail.age"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "age_indicates_how_old_customer_details_are"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_name": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.name": {
+			          "Target": {
+			            "Entity": "customer_detail.name"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_names"
+			        },
+			        {
+			          "Name": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Name": {
+			              "Role": "customer_detail.name"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "names_are_names_IDs_of_customer_details"
+			        }
+			      ]
+			    },
+			    "customer_detail_has_customer_ID": {
+			      "Binding": {
+			        "ConceptualEntity": "Customer_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "customer_detail": {
+			          "Target": {
+			            "Entity": "customer_detail"
+			          }
+			        },
+			        "customer_detail.customer_ID": {
+			          "Target": {
+			            "Entity": "customer_detail.customer_ID"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "customer_detail"
+			            },
+			            "Object": {
+			              "Role": "customer_detail.customer_ID"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "customer_details_have_customer_ID"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_22": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_22": {
+			          "Target": {
+			            "Entity": "loan_detail.column_22"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_22"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_22"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_23": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_23": {
+			          "Target": {
+			            "Entity": "loan_detail.column_23"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_23"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_23"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_24": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_24": {
+			          "Target": {
+			            "Entity": "loan_detail.column_24"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_24"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_24"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_25": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_25": {
+			          "Target": {
+			            "Entity": "loan_detail.column_25"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_25"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_25"
+			        }
+			      ]
+			    },
+			    "loan_detail_has_column_26": {
+			      "Binding": {
+			        "ConceptualEntity": "Loan_Details"
+			      },
+			      "State": "Generated",
+			      "Roles": {
+			        "loan_detail": {
+			          "Target": {
+			            "Entity": "loan_detail"
+			          }
+			        },
+			        "loan_detail.column_26": {
+			          "Target": {
+			            "Entity": "loan_detail.column_26"
+			          }
+			        }
+			      },
+			      "Phrasings": [
+			        {
+			          "Attribute": {
+			            "Subject": {
+			              "Role": "loan_detail"
+			            },
+			            "Object": {
+			              "Role": "loan_detail.column_26"
+			            }
+			          },
+			          "State": "Generated",
+			          "Weight": 0.99,
+			          "ID": "loan_details_have_column_26"
+			        }
+			      ]
+			    }
+			  },
+			  "Agents": {
+			    "Internal": {
+			      "Version": "1.1.0"
+			    }
+			  }
+			}
+		contentType: json
+

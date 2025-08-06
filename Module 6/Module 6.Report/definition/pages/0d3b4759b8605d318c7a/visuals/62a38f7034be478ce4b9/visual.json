@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.1.0/schema.json",
+  "name": "62a38f7034be478ce4b9",
+  "position": {
+    "x": 866.66666666666674,
+    "y": 455,
+    "z": 8000,
+    "height": 245,
+    "width": 395,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "pivotTable",
+    "query": {
+      "queryState": {
+        "Rows": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "Income_Category"
+                }
+              },
+              "queryRef": "Customer_Details.Income_Category",
+              "nativeQueryRef": "Income_Category",
+              "active": true
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "Education_Level"
+                }
+              },
+              "queryRef": "Customer_Details.Education_Level",
+              "nativeQueryRef": "Education_Level",
+              "active": false
+            }
+          ]
+        },
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "High_Risk_Loans"
+                }
+              },
+              "queryRef": "Customer_Details.High_Risk_Loans",
+              "nativeQueryRef": "High_Risk_Loans"
+            },
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Customer_Details"
+                    }
+                  },
+                  "Property": "High_Risk_Loan_Amount"
+                }
+              },
+              "queryRef": "Customer_Details.High_Risk_Loan_Amount",
+              "nativeQueryRef": "High_Risk_Loan_Amount"
+            }
+          ]
+        }
+      }
+    },
+    "visualContainerObjects": {
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
