@@ -1,0 +1,259 @@
+table Sales
+	lineageTag: 424ce005-1d5c-4650-9c32-f891e693157e
+
+	column 'Row ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3980f476-569d-4123-88fa-7a2bd7a079a9
+		summarizeBy: count
+		sourceColumn: Row ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order ID'
+		dataType: string
+		lineageTag: e04a7f82-aef5-4b15-9233-13725fbded3b
+		summarizeBy: none
+		sourceColumn: Order ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d8c952f4-d30d-4414-b7e3-013163e0d78c
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		variation Variation
+			isDefault
+			relationship: 80c9f230-906a-4630-a921-1c91993fe10b
+			defaultHierarchy: LocalDateTable_72799bb6-d13e-4136-b2b6-bb7002d8f4ec.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Ship Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4bb82a88-2401-4c85-9207-127f0e7bee16
+		summarizeBy: none
+		sourceColumn: Ship Date
+
+		variation Variation
+			isDefault
+			relationship: cec24362-c58c-4d80-af84-f16f64c638b3
+			defaultHierarchy: LocalDateTable_0860d7eb-d82f-4de9-a808-757fb1d59867.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Delivery Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2b812187-97f0-4b83-88c2-17a564b81d2d
+		summarizeBy: none
+		sourceColumn: Delivery Date
+
+		variation Variation
+			isDefault
+			relationship: 364df804-c50a-4def-95c1-42da6aab37be
+			defaultHierarchy: LocalDateTable_e0f4389d-5398-423a-aa2f-bf3df08287ac.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Ship Mode'
+		dataType: string
+		lineageTag: 47392d3d-c7f1-4aea-84cb-7039e21dc80c
+		summarizeBy: none
+		sourceColumn: Ship Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 6c7bc4c3-227e-403b-a98d-2ea3160501a6
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: 2e9cef27-a4b3-4e37-acbe-0b496e5513ef
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 03e7799a-f4f3-49a3-8655-837ba8405fc6
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: double
+		lineageTag: 72305f7e-3f32-41eb-a75c-77eda3bcdd78
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column 'Discount Category'
+		dataType: string
+		lineageTag: d3af33a7-e414-4e8f-a8e0-9f4e2a3f5b03
+		summarizeBy: none
+		sourceColumn: Discount Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.Customer Name'
+		dataType: string
+		lineageTag: d9ae31dd-1eb2-4b80-9275-f58f0e886efb
+		summarizeBy: none
+		sourceColumn: Customers.Customer Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.Segment'
+		dataType: string
+		lineageTag: fc7d1cca-e9c7-42d5-ba68-8450d06387cb
+		summarizeBy: none
+		sourceColumn: Customers.Segment
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.Country'
+		dataType: string
+		lineageTag: 334ea0a4-1e8a-4f35-85e1-f06cc1785440
+		summarizeBy: none
+		sourceColumn: Customers.Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.City'
+		dataType: string
+		lineageTag: 3b01414d-a8bd-410d-846c-bc5d2d32a39f
+		summarizeBy: none
+		sourceColumn: Customers.City
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.State'
+		dataType: string
+		lineageTag: a8b536b8-dd38-4181-ac80-f595ffab9ce0
+		summarizeBy: none
+		sourceColumn: Customers.State
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.Postal Code'
+		dataType: int64
+		formatString: 0
+		lineageTag: c38793c5-3e7c-4a32-ab58-50457fec293c
+		summarizeBy: count
+		sourceColumn: Customers.Postal Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customers.Region'
+		dataType: string
+		lineageTag: 14120aa7-6ba1-4e67-9b73-5f8a0dfefbb3
+		summarizeBy: none
+		sourceColumn: Customers.Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Sales Amount'
+		dataType: string
+		lineageTag: 7bb47039-aa56-4ce0-ae34-a731609e6dfb
+		summarizeBy: none
+		sourceColumn: Sales Amount
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Expanded Products.Category'
+		dataType: string
+		lineageTag: ff9c6f26-745e-48be-9559-0bce428fefd9
+		summarizeBy: none
+		sourceColumn: Expanded Products.Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Expanded Products.Sub-Category'
+		dataType: string
+		lineageTag: 2d29c368-c82f-46ec-b264-7e2b8747d6f3
+		summarizeBy: none
+		sourceColumn: Expanded Products.Sub-Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Expanded Products.Product Name'
+		dataType: string
+		lineageTag: 9c5df49b-2f4e-454d-bd49-52d4a3c30b68
+		summarizeBy: none
+		sourceColumn: Expanded Products.Product Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Expanded Products.List price'
+		dataType: int64
+		formatString: 0
+		lineageTag: 5d1608be-c84c-455e-9362-13cc8fbae1ac
+		summarizeBy: sum
+		sourceColumn: Expanded Products.List price
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Amount'
+		dataType: string
+		lineageTag: accda16b-cd0e-48a7-a5b4-8a5794bce396
+		summarizeBy: none
+		sourceColumn: Product Amount
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_Connection2POWERBI.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row ID", Int64.Type}, {"Order ID", type text}, {"Order Date", Int64.Type}, {"Ship Date", Int64.Type}, {"Delivery Date", Int64.Type}, {"Ship Mode", type text}, {"Customer ID", type text}, {"Product ID", type text}, {"Quantity", Int64.Type}, {"Discount", type number}, {"Column11", type any}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column11"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Columns",{{"Order Date", type date}, {"Ship Date", type date}, {"Delivery Date", type date}, {"Discount", Percentage.Type}}),
+				    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Changed Type1"),
+				    #"Filtered Rows" = Table.SelectRows(#"Removed Errors", each ([Quantity] <> 0)),
+				    #"Added Conditional Column" = Table.AddColumn(#"Filtered Rows", "Discount Category", each if [Discount] = 0 then "No Discount" else if [Discount] <= 0.1 then "Low" else if [Discount] <= 0.25 then "Medium" else "High"),
+				    #"Merged Queries" = Table.NestedJoin(#"Added Conditional Column", {"Product ID"}, Products, {"Product ID"}, "Products", JoinKind.LeftOuter),
+				    #"Renamed Columns" = Table.RenameColumns(#"Merged Queries",{{"Products", "Merged_Sales_Products"}}),
+				    #"Expanded Merged_Sales_Products" = Table.ExpandTableColumn(#"Renamed Columns", "Merged_Sales_Products", {"Category", "Sub-Category", "Product Name", "List price"}, {"Expanded Products.Category", "Expanded Products.Sub-Category", "Expanded Products.Product Name", "Expanded Products.List price"}),
+				    #"Merged Queries1" = Table.NestedJoin(#"Expanded Merged_Sales_Products", {"Customer ID"}, Customers, {"Customer ID"}, "Customers", JoinKind.LeftOuter),
+				    #"Expanded Customers" = Table.ExpandTableColumn(#"Merged Queries1", "Customers", {"Customer Name", "Segment", "Country", "City", "State", "Postal Code", "Region"}, {"Customers.Customer Name", "Customers.Segment", "Customers.Country", "Customers.City", "Customers.State", "Customers.Postal Code", "Customers.Region"}),
+				    #"Added Custom" = Table.AddColumn(#"Expanded Customers", "Product Amount", each [Quantity] * [List price]),
+				    #"Removed Columns1" = Table.RemoveColumns(#"Added Custom",{"Product Amount"}),
+				    #"Added Custom1" = Table.AddColumn(#"Removed Columns1", "Custom", each [Quantity] * [Merged_Sales_Products.List price]),
+				    #"Renamed Columns1" = Table.RenameColumns(#"Added Custom1",{{"Custom", "Product Amount"}}),
+				    #"Added Custom2" = Table.AddColumn(#"Renamed Columns1", "Sales Amount", each [Product Amount] - ([Discount] * [Product Amount])),
+				    #"Removed Columns2" = Table.RemoveColumns(#"Added Custom2",{"Product Amount"}),
+				    #"Added Custom3" = Table.AddColumn(#"Removed Columns2", "Product Amount", each [Quantity] *[Expanded Products.List price]),
+				    #"Removed Columns3" = Table.RemoveColumns(#"Added Custom3",{"Sales Amount"}),
+				    #"Added Custom4" = Table.AddColumn(#"Removed Columns3", "Sales Amount", each [Product Amount] - ([Product Amount] * [Discount]))
+				in
+				    #"Added Custom4"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

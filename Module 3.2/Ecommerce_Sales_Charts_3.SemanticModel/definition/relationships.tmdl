@@ -1,0 +1,20 @@
+relationship 53a8e23b-ed20-467c-bdbe-f262deef391c
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Dates.Date
+	toColumn: LocalDateTable_5ca038aa-3d69-4860-bc25-78d316095859.Date
+
+relationship 80c9f230-906a-4630-a921-1c91993fe10b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.'Order Date'
+	toColumn: LocalDateTable_72799bb6-d13e-4136-b2b6-bb7002d8f4ec.Date
+
+relationship cec24362-c58c-4d80-af84-f16f64c638b3
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.'Ship Date'
+	toColumn: LocalDateTable_0860d7eb-d82f-4de9-a808-757fb1d59867.Date
+
+relationship 364df804-c50a-4def-95c1-42da6aab37be
+	joinOnDateBehavior: datePartOnly
+	fromColumn: Sales.'Delivery Date'
+	toColumn: LocalDateTable_e0f4389d-5398-423a-aa2f-bf3df08287ac.Date
+

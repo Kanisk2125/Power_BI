@@ -1,0 +1,111 @@
+table Sales
+	lineageTag: 424ce005-1d5c-4650-9c32-f891e693157e
+
+	column 'Row ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3980f476-569d-4123-88fa-7a2bd7a079a9
+		summarizeBy: count
+		sourceColumn: Row ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order ID'
+		dataType: string
+		lineageTag: e04a7f82-aef5-4b15-9233-13725fbded3b
+		summarizeBy: none
+		sourceColumn: Order ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: int64
+		formatString: 0
+		lineageTag: d8c952f4-d30d-4414-b7e3-013163e0d78c
+		summarizeBy: sum
+		sourceColumn: Order Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Date'
+		dataType: int64
+		formatString: 0
+		lineageTag: 4bb82a88-2401-4c85-9207-127f0e7bee16
+		summarizeBy: sum
+		sourceColumn: Ship Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Date'
+		dataType: int64
+		formatString: 0
+		lineageTag: 2b812187-97f0-4b83-88c2-17a564b81d2d
+		summarizeBy: sum
+		sourceColumn: Delivery Date
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ship Mode'
+		dataType: string
+		lineageTag: 47392d3d-c7f1-4aea-84cb-7039e21dc80c
+		summarizeBy: none
+		sourceColumn: Ship Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 6c7bc4c3-227e-403b-a98d-2ea3160501a6
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: 2e9cef27-a4b3-4e37-acbe-0b496e5513ef
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 03e7799a-f4f3-49a3-8655-837ba8405fc6
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: double
+		lineageTag: 72305f7e-3f32-41eb-a75c-77eda3bcdd78
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Column11
+		dataType: string
+		lineageTag: eca2aeaf-0adc-472f-9996-0ff8a12d58e6
+		summarizeBy: none
+		sourceColumn: Column11
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_Connection2POWERBI.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row ID", Int64.Type}, {"Order ID", type text}, {"Order Date", Int64.Type}, {"Ship Date", Int64.Type}, {"Delivery Date", Int64.Type}, {"Ship Mode", type text}, {"Customer ID", type text}, {"Product ID", type text}, {"Quantity", Int64.Type}, {"Discount", type number}, {"Column11", type any}})
+				in
+				    #"Changed Type"
+
+	annotation PBI_ResultType = Table
+

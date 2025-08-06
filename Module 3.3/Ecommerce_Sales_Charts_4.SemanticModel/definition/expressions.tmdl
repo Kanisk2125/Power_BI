@@ -1,0 +1,23 @@
+expression 'Errors in Sales' =
+		let
+		Source = Sales,
+		  #"Detected Type Mismatches" = let
+		    tableWithOnlyPrimitiveTypes = Table.SelectColumns(Source, Table.ColumnsOfType(Source, {type nullable number, type nullable text, type nullable logical, type nullable date, type nullable datetime, type nullable datetimezone, type nullable time, type nullable duration})),
+		    recordTypeFields = Type.RecordFields(Type.TableRow(Value.Type(tableWithOnlyPrimitiveTypes))),
+		    fieldNames = Record.FieldNames(recordTypeFields),
+		    fieldTypes = List.Transform(Record.ToList(recordTypeFields), each [Type]),
+		    pairs = List.Transform(List.Positions(fieldNames), (i) => {fieldNames{i}, (v) => if v = null or Value.Is(v, fieldTypes{i}) then v else error [Message = "The type of the value does not match the type of the column.", Detail = v], fieldTypes{i}})
+		in
+		    Table.TransformColumns(Source, pairs),
+		  #"Added Index" = Table.AddIndexColumn(#"Detected Type Mismatches", "Row Number" ,1),
+		  #"Kept Errors" = Table.SelectRowsWithErrors(#"Added Index", {"Row ID", "Order ID", "Order Date", "Ship Date", "Delivery Date", "Ship Mode", "Customer ID", "Product ID", "Quantity", "Discount", "Discount Category", "Expanded Products.Category", "Expanded Products.Sub-Category", "Expanded Products.Product Name", "Expanded Products.List price", "Customers.Customer Name", "Customers.Segment", "Customers.Country", "Customers.City", "Customers.State", "Customers.Postal Code", "Customers.Region", "Product Amount", "Sales Amount"}),
+		  #"Reordered Columns" = Table.ReorderColumns(#"Kept Errors", {"Row Number", "Row ID", "Order ID", "Order Date", "Ship Date", "Delivery Date", "Ship Mode", "Customer ID", "Product ID", "Quantity", "Discount", "Discount Category", "Expanded Products.Category", "Expanded Products.Sub-Category", "Expanded Products.Product Name", "Expanded Products.List price", "Customers.Customer Name", "Customers.Segment", "Customers.Country", "Customers.City", "Customers.State", "Customers.Postal Code", "Customers.Region", "Product Amount", "Sales Amount"})
+		in
+		    #"Reordered Columns"
+	lineageTag: c48e1a12-3a46-442b-99b1-cf65e5520999
+	queryGroup: 'Query Errors - 11-07-2025 14:48:03'
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,90 @@
+table Dates
+	lineageTag: b4d7a6be-2852-4a2d-bd3e-46e8bc1ae526
+
+	column Date
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 671bdaec-8dc9-4cae-8012-342a849196fe
+		summarizeBy: none
+		sourceColumn: Date
+
+		variation Variation
+			isDefault
+			relationship: 53a8e23b-ed20-467c-bdbe-f262deef391c
+			defaultHierarchy: LocalDateTable_5ca038aa-3d69-4860-bc25-78d316095859.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Day Name'
+		dataType: string
+		lineageTag: 99498ad5-2954-45d3-b1a2-e2726e6bd823
+		summarizeBy: none
+		sourceColumn: Day Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Day
+		dataType: int64
+		formatString: 0
+		lineageTag: 2fd968a0-8a3a-4f7e-81af-eca4228ffae2
+		summarizeBy: sum
+		sourceColumn: Day
+
+		annotation SummarizationSetBy = Automatic
+
+	column Week
+		dataType: int64
+		formatString: 0
+		lineageTag: c60bc2e0-3875-4eb1-8719-891238971faf
+		summarizeBy: sum
+		sourceColumn: Week
+
+		annotation SummarizationSetBy = Automatic
+
+	column Month
+		dataType: int64
+		formatString: 0
+		lineageTag: a996912f-81fe-4b2e-a870-b37c514a68c3
+		summarizeBy: sum
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		dataType: int64
+		formatString: 0
+		lineageTag: 08937ca1-f3b0-4a96-828f-724701a6870d
+		summarizeBy: sum
+		sourceColumn: Quarter
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		dataType: int64
+		formatString: 0
+		lineageTag: 8bc345e6-1467-46a5-aa54-8ef83a9d92cb
+		summarizeBy: sum
+		sourceColumn: Year
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Dates = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_Connection2POWERBI.xlsx"), null, true),
+				    Dates_Sheet = Source{[Item="Dates",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Dates_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Date", Int64.Type}, {"Day Name", type text}, {"Day", Int64.Type}, {"Week", Int64.Type}, {"Month", Int64.Type}, {"Quarter", Int64.Type}, {"Year", Int64.Type}, {"Column8", type any}, {"Column9", type any}, {"Column10", type any}, {"Column11", type any}, {"Column12", type any}, {"Column13", type any}, {"Column14", type any}, {"Column15", type any}, {"Column16", type any}, {"Column17", type any}, {"Column18", type any}, {"Column19", type any}, {"Column20", type any}, {"Column21", type any}, {"Column22", type any}, {"Column23", type any}, {"Column24", type any}, {"Column25", type any}, {"Column26", type any}, {"Column27", type any}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column8", "Column9", "Column27", "Column25", "Column26", "Column23", "Column24", "Column22", "Column21", "Column20", "Column19", "Column18", "Column17", "Column15", "Column16", "Column13", "Column14", "Column11", "Column12", "Column10"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Columns",{{"Date", type date}}),
+				    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Changed Type1")
+				in
+				    #"Removed Errors"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

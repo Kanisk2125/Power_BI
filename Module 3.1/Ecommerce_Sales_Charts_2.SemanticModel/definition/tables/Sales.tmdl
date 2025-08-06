@@ -1,0 +1,130 @@
+table Sales
+	lineageTag: 424ce005-1d5c-4650-9c32-f891e693157e
+
+	column 'Row ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: 3980f476-569d-4123-88fa-7a2bd7a079a9
+		summarizeBy: count
+		sourceColumn: Row ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order ID'
+		dataType: string
+		lineageTag: e04a7f82-aef5-4b15-9233-13725fbded3b
+		summarizeBy: none
+		sourceColumn: Order ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Order Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: d8c952f4-d30d-4414-b7e3-013163e0d78c
+		summarizeBy: none
+		sourceColumn: Order Date
+
+		variation Variation
+			isDefault
+			relationship: 80c9f230-906a-4630-a921-1c91993fe10b
+			defaultHierarchy: LocalDateTable_72799bb6-d13e-4136-b2b6-bb7002d8f4ec.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Ship Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 4bb82a88-2401-4c85-9207-127f0e7bee16
+		summarizeBy: none
+		sourceColumn: Ship Date
+
+		variation Variation
+			isDefault
+			relationship: cec24362-c58c-4d80-af84-f16f64c638b3
+			defaultHierarchy: LocalDateTable_0860d7eb-d82f-4de9-a808-757fb1d59867.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Delivery Date'
+		dataType: dateTime
+		formatString: Long Date
+		lineageTag: 2b812187-97f0-4b83-88c2-17a564b81d2d
+		summarizeBy: none
+		sourceColumn: Delivery Date
+
+		variation Variation
+			isDefault
+			relationship: 364df804-c50a-4def-95c1-42da6aab37be
+			defaultHierarchy: LocalDateTable_e0f4389d-5398-423a-aa2f-bf3df08287ac.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column 'Ship Mode'
+		dataType: string
+		lineageTag: 47392d3d-c7f1-4aea-84cb-7039e21dc80c
+		summarizeBy: none
+		sourceColumn: Ship Mode
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Customer ID'
+		dataType: string
+		lineageTag: 6c7bc4c3-227e-403b-a98d-2ea3160501a6
+		summarizeBy: none
+		sourceColumn: Customer ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product ID'
+		dataType: string
+		lineageTag: 2e9cef27-a4b3-4e37-acbe-0b496e5513ef
+		summarizeBy: none
+		sourceColumn: Product ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: 03e7799a-f4f3-49a3-8655-837ba8405fc6
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Discount
+		dataType: double
+		lineageTag: 72305f7e-3f32-41eb-a75c-77eda3bcdd78
+		summarizeBy: sum
+		sourceColumn: Discount
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition Sales = m
+		mode: import
+		source =
+				let
+				    Source = Excel.Workbook(File.Contents("C:\Users\Kanisk Jaiswal\Downloads\QUESTION_Connection2POWERBI.xlsx"), null, true),
+				    Sales_Sheet = Source{[Item="Sales",Kind="Sheet"]}[Data],
+				    #"Promoted Headers" = Table.PromoteHeaders(Sales_Sheet, [PromoteAllScalars=true]),
+				    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"Row ID", Int64.Type}, {"Order ID", type text}, {"Order Date", Int64.Type}, {"Ship Date", Int64.Type}, {"Delivery Date", Int64.Type}, {"Ship Mode", type text}, {"Customer ID", type text}, {"Product ID", type text}, {"Quantity", Int64.Type}, {"Discount", type number}, {"Column11", type any}}),
+				    #"Removed Columns" = Table.RemoveColumns(#"Changed Type",{"Column11"}),
+				    #"Changed Type1" = Table.TransformColumnTypes(#"Removed Columns",{{"Order Date", type date}, {"Ship Date", type date}, {"Delivery Date", type date}, {"Discount", Percentage.Type}}),
+				    #"Removed Errors" = Table.RemoveRowsWithErrors(#"Changed Type1"),
+				    #"Filtered Rows" = Table.SelectRows(#"Removed Errors", each ([Quantity] <> 0))
+				in
+				    #"Filtered Rows"
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+
